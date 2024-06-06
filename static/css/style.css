@@ -1,0 +1,87 @@
+*{
+    margin: 5px;
+    padding: 0;
+}
+
+/* Pseudoclases de css para la etiqueta de HTML  */
+
+:root{
+    --bg-color: rgb(27, 25, 25); 
+    --primary-color:yellow;
+    --secondary-color: rgb(144, 214, 214);
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h1{
+    color: rgb(191, 233, 6);
+    font-size: 30px;
+}
+
+h2{
+    color: white;
+    font-size: 22px;
+}
+
+.header{
+    width: 100%;
+    background-color: #62828f;
+    position: sticky; /*se queda en una posicion constante en la parte superior de la pagina web*/
+    top: 0;
+    z-index: 9999;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between; /*Trabaja la organizacion horizontal*/
+    align-items: center; /*Trabaja la organizacion vertical*/
+    padding: 0 50px;
+    height: 60px;
+}
+
+.nav-link{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+#banner{
+    background-image: url('/static/img/wall.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+section{
+    background-color: rgb(117, 127, 212);
+}
+
+.banner-css{
+    background-color: var(--bg-color);
+}
+
+footer{
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}
+
+footer a {
+    color:#333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover{
+    color:blue;
+}
+
+.social-icons{
+    margin: 20px 0;
+}
