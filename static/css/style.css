@@ -63,6 +63,22 @@ section{
     background-color: var(--bg-color);
 }
 
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.movie-item-img{
+    width: 200px;
+    height: 300px;
+}
+
+.movies-flex{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
 footer{
     background-color: #f8f9fa;
     padding: 20px;
