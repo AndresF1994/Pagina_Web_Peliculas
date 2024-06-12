@@ -1,6 +1,8 @@
 *{
-    margin: 5px;
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
 /* Pseudoclases de css para la etiqueta de HTML  */
@@ -48,6 +50,46 @@ nav{
     gap: 50px;
 }
 
+.menu-toggle{
+    display: none;
+}
+
+.menu-toggle-icon{
+    display: none;
+    cursor:pointer;
+    color: white;
+    font-size: 30px;
+}
+
+.mobile-nav{
+    display: none;
+    flex-direction: column;
+    background-color: #62828f;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    text-align: center;
+}
+
+.mobile-nav li{
+    padding: 10px;
+}
+
+.menu-toggle:checked~.mobile-nav{
+    display: flex;
+}
+
+@media(max-width:767px){
+    .desktop-nav{
+        display: none;
+    }
+
+    .menu-toggle-icon{
+        display: block;
+    }
+}
+
 #banner{
     background-image: url('/static/img/wall.jpg');
     background-size: cover;
@@ -63,20 +105,46 @@ section{
     background-color: var(--bg-color);
 }
 
+.banner-card{
+    text-align: center;
+    padding: 0 160px;
+}
+
+.banner-card h1{
+    font-size: 4vw;
+    font-weight: 700;
+    color: rgb(191, 233, 6);
+}
+
+.banner-card h2{
+    margin-bottom: 20px;
+}
+
+.btn-cac{
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.movie-item-img{
-    width: 200px;
-    height: 300px;
-}
-
 .movies-flex{
     display: flex;
     flex-wrap: wrap;
+    gap: 50px;
     
+}
+
+.movie-item-img{
+    width: 200px;
+    height: 300px;
 }
 
 footer{

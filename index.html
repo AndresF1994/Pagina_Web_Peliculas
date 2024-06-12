@@ -21,31 +21,46 @@
 
     <header class="header">
         <nav>
+            <!-- Navegador de escritorio-->
             <div id="logo"> <a href="/index.html"><i class="fas fa-film fa-spin"></i>
                 AFP Movies</a></div>
-            <ul class="nav-link"> 
+            <ul class="nav-link desktop-nav"> 
                 <!--Link con ruta relativa-->
                 <li><a href="/register.html">Registrarse</a></li>
                 <li>Tendencias</li>
                 <!--Link con ruta absoluta-->
                 <li><a href="https://developer.themoviedb.org/reference/intro/getting-started" target="_blank">Ir a la API</a></li>
 
-                <li>Iniciar Sesión</li>
+                <li><a href="#" class="btn-cac">Iniciar Sección</a></li>
 
             </ul>
-            <!--Lista ordenada
-            <ol>
-                <li>Ujo</li>
-                <li>Dos</li>
-                <li>Tres</li>
-            </ol>-->
+            <!--Menu Hamburguesa-->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-toggle-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-link mobile-nav"> 
+                <!--Link con ruta relativa-->
+                <li><a href="/register.html">Registrarse</a></li>
+                <li>Tendencias</li>
+                <!--Link con ruta absoluta-->
+                <li><a href="https://developer.themoviedb.org/reference/intro/getting-started" target="_blank">Ir a la API</a></li>
+
+                <li><a href="#" class="btn-cac">Iniciar Sección</a></li>
+
+            </ul>
+
         </nav>
     </header>
 
     <main>
         <section id="banner" class="banner-css">
-            <h1>Bienvenido a AFP Movies</h1> 
-            <h2>¡Tu sitio favorito de pelis!</h2>
+            <div class="banner-card container">
+            <h1>Bienvenido a AFP Movies</h1> <br>
+            <h1>Peliculas y series ilimitadas y mucho mas</h1> <br>
+            <h2>Disfruta donde quieras, cancela cuando quieras</h2>
+            <a href="/register.html" class="btn-cac">Registrarse</a>
+        </div>
         </section>
 
         <section id="search">
@@ -98,9 +113,10 @@
                                 <p class="movie-detail-subtitle">2016 Terror/Suspenso</p>
                             </div>
                             </a>
-                    </div>
+                        </div>
+                    </div>  
 
-                            <<div id="popular-list" class="movies-flex">
+                            <div id="popular-list" class="movies-flex">
                                 <div class="movie-item" id="movie5">
                                     <a href="/detail-movies.html">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfrcH4oFF7yRAyjcFDbnkmOSYj-X75r-AikQ&s" alt="Golpe Bajo" class="movie-item-img">
